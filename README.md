@@ -8,17 +8,15 @@ A fully functional web browser made with WebView. FXML file is provided as well 
 
 3) To instantiate the browser you write a try-catch statement since the core method of the browser class throws an IOException. To do that write the following:
 
-    WebBrowserComponentController webBrowser = new WebBrowserComponentController();
-        try {
-            webBrowser.createBrowserInTabPane(the parent container of your choice here);
-        } catch (IOException e) {
-            e.printStackTrace( );
-        }
+            WebBrowserComponentController webBrowser = new WebBrowserComponentController();
+            try {
+                webBrowser.createBrowserInTabPane(the parent container of your choice here);
+            } catch (IOException e) {
+                e.printStackTrace( );
+            }
         
  Once you do that, locate the parts where the parent container is mentioned inside the method, and replace it with the parent container you inserted in the parameter. 
         
 4) The browser is using a few font-awesome icons for JavaFX. For that reason you'll have to download fontawesomefx-8.9 and add the jar to your project's external libraries. You can download fontawesomefx-8.9 from: https://bitbucket.org/Jerady/fontawesomefx/downloads/
 
 5) Alongside the java and fxml files, are provided three more files, a png, an html, and a css file. These three are responsible for showing the user an error message in case the page they requested can't be reached. The image was downloaded from: "https://www.flaticon.com and it's a property of https://www.freepik.com/". 
-
-
